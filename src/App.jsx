@@ -1,0 +1,25 @@
+import Bienvenida from "./components/Bienvenida";
+import Cabecera from "./components/Cabecera";
+import TarjetaActividad from "./components/TarjetaActividad";
+import Navegacion from "./components/Navegacion";
+import PiePagina from "./components/PiePagina";
+
+function App() {
+  return (
+    <>
+      <Navegacion />
+      <Cabecera />
+      <main className="container py-4">
+        <Bienvenida />
+        <div className="row g-4">
+          <div className="col-12 col-md-6 col-lg-4">
+            <TarjetaActividad />
+          </div>
+        </div>
+      </main>
+      <PiePagina />
+    </>
+  );
+}
+
+export default App;
